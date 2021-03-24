@@ -9,6 +9,8 @@ body {
     flex-direction: column-reverse;
 }
 
+        /* Header */
+
 header nav {
     height: 80px;
     background-color: #282828;
@@ -30,8 +32,21 @@ header nav ul li {
 main {
     background-color: #141922;
     height: calc(100vh - 80px);
+    display: flex;
 }
 
+    /* Prima section */
+.sidebar {
+    width: 250px;
+    background-color: aqua;
+    height: calc(100vh - 80px);
+}
+
+.playlist {
+    background-color: red;
+    width: calc(100vw - 250px);
+    height: calc( 100vh - 80px);
+}
 
 
     /* Utility classes */
