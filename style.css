@@ -4,9 +4,54 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+header nav {
+    height: 80px;
+    background-color: #282828;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    padding: 10px 10px;
+}
+
+main {
+    background-color: #141922;
+    height: calc(100vh - 80px);
+}
 
 
 
+    /* Utility classes */
+.display-flex {
+    display: flex;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float-left {
+    float: left;
+}
+
+.border {
+    border: 1px solid black;
+}
 
              /* Media query */
 
@@ -23,7 +68,7 @@
 
 }
                 /* LG */
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 992px) {
 
 }
 
