@@ -136,7 +136,7 @@ main {
 .upgrade {
     color: white;
     text-decoration: none;
-    border: 1px solid white;
+    border: 1px solid hsla(0,0%,100%,.7);
     padding: 10px;
     border-radius: 25px;
     line-height: 100px;
@@ -162,6 +162,8 @@ main {
 
 .recenti {
     margin-bottom: 20px;
+    margin-left: 5px;
+    margin-top: 10px;
 }
 
    /* Box img */
@@ -179,6 +181,8 @@ main {
 .box_img h5 ,p{
     text-align: center;
 }
+
+
 
 
 
@@ -217,28 +221,67 @@ main {
     margin-right: 10px;
 }
 
+
+
+
+
              /* Media query */
 
                  /* XS */
 @media screen and (max-width: 480px) {
-    .menu_left {
-        display: none;
-    }
-    .playlist_right {
-    width: 100%;
-    }
+
+.hidden_xs {
+    visibility: hidden;
+} 
+
+.menu_left {
+     width: 50px;
 }
+
+.playlist_right {
+    width: 100%;
+}
+
+.logo_small {
+    width: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: absolute;
+    padding-left: 5px;
+}
+
+.sidebar {
+    padding-left: 5px;
+}
+
+.sidebar ul li a {
+    /* width: 10px; */
+    /* text-align: center; */
+}
+
+}
+
                 /* SM */
 @media screen and (min-width: 481px) and (max-width: 767px) {
+
+.logo_small {
+    display: none;
+}
 
 }
                 /* MD */
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
+.logo_small {
+   display: none;
+}
 }
                 /* LG */
 @media screen and (min-width: 992px) {
 
+.logo_small {
+    display: none;
+}
 }
 
 
