@@ -12,11 +12,11 @@
     <header>
                       <!-- Barra di riproduzione in basso -->
         <nav>
-            <ul>
+            <ul class="prima_ul">
                 <li><img src="img/sinister.jpeg" alt="" class="img_sinister"></li>
                 <li>
                     <h4>Sinister</h4>
-                    <p>Brano Nome</p>
+                    <p class="brano">Brano Nome</p>
                 </li>
                 <li><i class="fa fa-heart-o" aria-hidden="true"></i></li>
                 <li><i class="fa fa-file-o" aria-hidden="true"></i></li>
@@ -49,17 +49,27 @@
 
     <main>
                      <!-- Barra del menu a sinistra -->
-        <section>
+        <section class="menu_left">
               <div class="sidebar">
-                  <div><img src="img/logo.svg" alt=""></div>
+                  <img src="img/logo.svg" alt="" class="logo">
                   <ul>
-                      <li>Home</li>
-                      <li>Cerca</li>
-                      <li>La tua libreria</li>
+                      <li>
+                          <img src="img/home.svg" alt="">
+                          <a href="#">Home</a>
+                      </li>
+                      <li>
+                          <img src="img/search.svg" alt="">
+                          <a href="#">Cerca</a></li>
+                      <li>
+                          <img src="img/libreria.svg" alt="">
+                          <a href="#">La tua libreria</a></li>
                   </ul>
-                  <ul>
-                      <li>PLAYLIST</li>
-                      <li>Crea playlist</li>
+                  <ul class="central_playlist">
+                      <li><a href="#"><strong class="color_white">PLAYLIST</strong></a></li>
+                      <li>
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                        <a href="#">Crea playlist</a> 
+                        </li>
                       <li>Nome Playlist</li>
                       <li>Nome Playlist</li>
                       <li>Nome Playlist</li>
@@ -69,16 +79,24 @@
 
                   </ul>
                   <ul class="nome_utente">
-                      <li>Installa app</li>
+                      <li>
+                          <img src="img/download.svg" alt="">
+                          <a href="#">Installa app</a>
+                      </li>
                       <hr>
-                      <li>John Doe</li>
+                      <li>
+                          <img src="img/profile.svg" alt="">
+                          <div><a href="#">John Doe</a></div>
+                      </li>
                       <li></li>
                   </ul>
               </div>
         </section>
                      <!-- Contenuto delle playlist a destra -->
-        <section>
-              <div class="playlist"></div>
+        <section class="playlist_right">
+              <div class="hero">
+                  <div><a class="upgrade" href="#"><strong>EFFETTUA L'UPGRADE</strong></a></div>
+              </div>
         </section>
     </main>
 </body>
