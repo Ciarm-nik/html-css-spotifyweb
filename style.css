@@ -7,6 +7,9 @@
 body {
     display: flex;
     flex-direction: column-reverse;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 
         /* Header */
@@ -44,7 +47,13 @@ header nav ul li {
 .brano {
     font-size: 10px;
     color: gray;
+}.brano:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
 }
+
+
 
 .play {
     flex-direction: column;
@@ -150,6 +159,27 @@ main {
     height: calc( 100vh - 100px);
     overflow: auto;
 }
+.evidenzia {
+   border-bottom: 2px solid green;
+}
+
+  /* Box img */
+  .box_img {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+
+.box_img img {
+    margin: 10px;
+    max-width: 100%;
+    width: 130px;
+} 
+
+.box_img h5 ,p{
+    text-align: center;
+}
 
     /* Hero */
 
@@ -171,6 +201,24 @@ main {
     font-size: 13px;
 }
 
+.upgrade:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+
+  ul li a:hover {
+      color: white;
+      font-weight: bold;
+
+  }
+
+  .central_playlist li:hover {
+    color: white;
+    font-weight: bold;
+  }
+
         /* Menu top */
 
 .menu_top ul {
@@ -184,7 +232,6 @@ main {
 .menu_top li a{
     text-decoration: none;
     color: #6d6d6d;
-    padding: 15px 10px;
 }
 
 .recenti {
@@ -193,21 +240,7 @@ main {
     margin-top: 10px;
 }
 
-   /* Box img */
-.box_img {
-    display: flex;
-    flex-wrap: wrap;
-    overflow: auto;
-}
-
-.box_img img {
-    width: 120px;
-    margin: 5px;
-} 
-
-.box_img h5 ,p{
-    text-align: center;
-}
+ 
 
 
 
