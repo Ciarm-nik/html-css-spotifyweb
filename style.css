@@ -121,6 +121,7 @@ main {
     background-color: #141922;
     width: calc(100vw - 250px);
     height: calc( 100vh - 100px);
+    overflow: auto;
 }
 
     /* Hero */
@@ -171,10 +172,11 @@ main {
 }
 
 .box_img img {
-    width: 150px;
+    width: 120px;
+    margin: 5px;
 } 
 
-.box_img h4 ,p{
+.box_img h5 ,p{
     text-align: center;
 }
 
