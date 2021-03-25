@@ -11,6 +11,10 @@ body {
 
         /* Header */
 
+header {
+    z-index: 2;
+}        
+
 header nav {
     height: 100px;
     background-color: #282828;
@@ -71,9 +75,10 @@ main {
     background-color: #000000;
     height: calc(100vh - 100px);
     color: white;
-    /* flex-direction: column; */
+    flex-direction: column;
     overflow: auto;
     padding-left: 15px;
+    display: flex;
 }
 
 .logo {
@@ -106,7 +111,8 @@ main {
 }
 
 .central_playlist {
-    flex-basis: 50%;
+    flex-basis: 80%;
+    overflow: auto;
 }
 
     /* Seconda section */
@@ -123,6 +129,7 @@ main {
     height: 100px;
     background-color: #000000;
     text-align: right;
+    margin-bottom: 15px;
 }
 
 .upgrade {
@@ -135,6 +142,42 @@ main {
     margin-right: 10px;
     font-size: 13px;
 }
+
+        /* Menu top */
+
+.menu_top ul {
+    text-align: center;
+    margin-bottom: 20px;
+}        
+.menu_top li {
+    display: inline;
+    padding: 10px;
+}        
+.menu_top li a{
+    text-decoration: none;
+    color: #6d6d6d;
+    padding: 15px 10px;
+}
+
+.recenti {
+    margin-bottom: 20px;
+}
+
+   /* Box img */
+.box_img {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.box_img img {
+    width: 150px;
+} 
+
+.box_img h4 ,p{
+    text-align: center;
+}
+
 
 
     /* Utility classes */
@@ -168,6 +211,10 @@ main {
     color: #6d6d6d;
 }
 
+.margin_right {
+    margin-right: 10px;
+}
+
              /* Media query */
 
                  /* XS */
@@ -175,8 +222,8 @@ main {
     .menu_left {
         display: none;
     }
-    main {
-        width: 100%;
+    .playlist_right {
+    width: 100%;
     }
 }
                 /* SM */
