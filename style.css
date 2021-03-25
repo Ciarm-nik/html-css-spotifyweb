@@ -57,10 +57,37 @@ header nav ul li {
     padding-right: 10px;
 }
 
+.fa-play-circle-o {
+    font-size: 23px;
+}
+
 main {
     /* background-color: #141922; */
     /* height: calc(100vh - 100px); */
     display: flex;
+}
+
+    /* Progress Bar */
+.progress_bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+} 
+
+.one_bar {
+    margin-left: 5px;
+    width: 20px;
+    height: 3px;
+    background-color: #c1c1c1;
+    border-radius: 20%;
+}
+
+.two_bar {
+    width: 120px;
+    height: 3px;
+    background-color: #5a5a5a;
+    margin-right: 5px;
+    border-radius: 20%;
 }
 
     /* Prima section */
@@ -253,12 +280,6 @@ main {
 .sidebar {
     padding-left: 5px;
 }
-
-.sidebar ul li a {
-    /* width: 10px; */
-    /* text-align: center; */
-}
-
 }
 
                 /* SM */
@@ -266,6 +287,18 @@ main {
 
 .logo_small {
     display: none;
+}
+
+.sidebar {
+    width: 180px;
+}
+
+.playlist_right {
+    width: 100%;
+}
+
+.fa-file-o {
+    display: block;
 }
 
 }
