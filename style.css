@@ -47,10 +47,19 @@ header nav ul li {
 .brano {
     font-size: 10px;
     color: gray;
+
 }.brano:hover {
     color: white;
     font-weight: bold;
     text-decoration: underline;
+}
+
+.fa-file-o:hover {
+    color: white;
+}
+
+.fa-heart-o:hover {
+    color: white;
 }
 
 .play {
@@ -69,9 +78,12 @@ header nav ul li {
 }
 
 main {
-    /* background-color: #141922; */
-    /* height: calc(100vh - 100px); */
     display: flex;
+}
+
+.durata {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
     /* Progress Bar */
@@ -240,9 +252,8 @@ main {
     margin-top: 10px;
 }
 
+/* Hover img */
  
-
-
 
 
 
@@ -288,7 +299,7 @@ main {
              /* Media query */
 
                  /* XS */
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
 
 .sidebar {
     padding-left: 10px;
@@ -305,7 +316,7 @@ main {
 }
 
 nav ul li {
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .two_bar {
@@ -319,30 +330,32 @@ header nav ul li {
 .hidden_xs {
     display: none;
 }
+
+.play li i {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.durata {
+    font-size: 10px;
+}
 }
 
                 /* SM */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
 
-.fa-file-o {
-    display: block;
-}
 
 .podcast {
-    width: calc(100% / 4);
+    width: calc(100% / 2);
 }
-
 
 .two_bar {
-    width: 50px;
+    width: 40px;
 }
+
 nav ul li {
     font-size: 10px;
     padding: 5px;
-}
-
-.img_sinister {
-    width: 30px;
 }
 
 header nav ul li {
@@ -351,10 +364,18 @@ header nav ul li {
 
 }
                 /* MD */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 780px) {
 
 .podcast {
     width: calc(100% / 4);
+}
+
+.two_bar {
+    width: 120px;
+}
+
+nav ul li {
+    font-size: 15px;
 }
 }
                 /* LG */
@@ -362,6 +383,10 @@ header nav ul li {
 
 .podcast {
     width: calc(100% / 6);
+}
+
+.two_bar {
+    width: 150px;
 }
 }
 
