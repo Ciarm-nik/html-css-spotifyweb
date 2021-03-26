@@ -53,8 +53,6 @@ header nav ul li {
     text-decoration: underline;
 }
 
-
-
 .play {
     flex-direction: column;
 }
@@ -167,20 +165,22 @@ main {
   .box_img {
     display: flex;
     flex-wrap: wrap;
-    overflow: auto;
+}
+
+.podcast {
+    padding: 0 10px;
 }
 
 
 .box_img img {
-    margin: 10px;
     max-width: 100%;
-    width: 130px;
 } 
 
 .box_img h5 ,p{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }
-
     /* Hero */
 
 .hero {
@@ -288,65 +288,80 @@ main {
              /* Media query */
 
                  /* XS */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
 
-.hidden_xs {
-    visibility: hidden;
-} 
-
-.menu_left {
-     width: 50px;
+.sidebar {
+    padding-left: 10px;
+    width: 60px;
 }
 
 .playlist_right {
     width: 100%;
 }
 
-.logo_small {
-    width: 40px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    position: absolute;
-    padding-left: 5px;
+.podcast {
+    width: calc(100% / 2);
+    padding: 0 20px;
 }
 
-.sidebar {
-    padding-left: 5px;
+nav ul li {
+    font-size: 15px;
+}
+
+.two_bar {
+    width: 100%;
+}
+
+header nav ul li {
+    padding: 5px 5px;
+}
+
+.hidden_xs {
+    display: none;
 }
 }
 
                 /* SM */
-@media screen and (min-width: 481px) and (max-width: 767px) {
-
-.logo_small {
-    display: none;
-}
-
-.sidebar {
-    width: 180px;
-}
-
-.playlist_right {
-    width: 100%;
-}
+@media screen and (min-width: 768px) {
 
 .fa-file-o {
     display: block;
 }
 
+.podcast {
+    width: calc(100% / 4);
+}
+
+
+.two_bar {
+    width: 50px;
+}
+nav ul li {
+    font-size: 10px;
+    padding: 5px;
+}
+
+.img_sinister {
+    width: 30px;
+}
+
+header nav ul li {
+    padding: 5px 5px;
+}
+
 }
                 /* MD */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 992px) {
 
-.logo_small {
-   display: none;
+.podcast {
+    width: calc(100% / 4);
 }
 }
                 /* LG */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
 
-.logo_small {
-    display: none;
+.podcast {
+    width: calc(100% / 6);
 }
 }
 
