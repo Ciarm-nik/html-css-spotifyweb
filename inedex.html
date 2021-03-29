@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-                      <!-- Barra di riproduzione in basso -->
+        <!-- Barra di riproduzione in basso -->
         <nav>
-            <ul class="prima_ul">
+            <ul class="left_ul">
                 <li><img src="img/sinister.jpeg" alt="" class="img_sinister"></li>
                 <li>
                     <h4>Sinister</h4>
                     <p class="brano">Brano Nome</p>
                 </li>
-                <li><i class="fa fa-heart-o color_gray" aria-hidden="true"></i></li>
-                <li><i class="fa fa-file-o color_gray" aria-hidden="true"></i></li>
+                <div class="preferiti">
+                    <li><i class="fa fa-heart-o color_gray" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-file-o color_gray" aria-hidden="true"></i></li>
+                </div>
+                
             </ul>
             <ul class="play">
                 <li>
@@ -35,7 +41,7 @@
                     <div class="display-flex">
                         <div class="durata">0:25</div>
                         <div class="progress_bar_play">
-                            <div class="one_bar"></div>
+                            <div class="one_bar"> </div>
                             <div class="hover_green"></div>
                             <div class="two_bar"></div>
                         </div>
@@ -43,7 +49,7 @@
                     </div>
                 </li>
             </ul>
-            <ul>
+            <ul class="right_ul">
                 <li><i class="fa fa-bars" aria-hidden="true"></i></li>
                 <li><i class="fa fa-television" aria-hidden="true"></i></li>
                 <li><i class="fa fa-volume-up" aria-hidden="true"></i></li>
@@ -59,84 +65,88 @@
     </header>
 
     <main>
-                     <!-- Barra del menu a sinistra -->
+        <!-- Barra del menu a sinistra -->
         <section class="menu_left">
-              <div class="sidebar ">
-                  <img src="img/logo.svg" alt="" class="logo">
-                  <ul>
-                      <li>
-                          <a href="#"><img src="img/home.svg" alt=""><strong class="color_white hidden_xs">Home</strong></a>
-                      </li>
-                      <li>
-                          <a href="#"><img src="img/search.svg" alt=""><span class=" hidden_xs">Cerca</span></a>
-                      </li>
-                      <li>
-                          <a href="#"><img src="img/libreria.svg" alt=""><span class="hidden_xs">La tua libreria</span></a>
-                      </li>
-                      <li>
-                          <a href="#"><strong class="color_white hidden_xs ">PLAYLIST</strong></a>
-                      </li>
-                      <li>
-                        <a class="hidden_xs" href="#"><i class="fa fa-plus-square" aria-hidden="true"></i>Crea playlist</a> 
-                      </li>
-                  </ul>
-                  <ul class="central_playlist hidden_xs">
-                      <li>Nome Playlist</li>
-                      <li>Nome Playlist</li>
-                      <li>Nome Playlist</li>
-                      <li>Nome Playlist</li>
-                      <li>Nome Playlist</li>
-                      <li>Nome Playlist</li>
-                      <li>Nome Playlist</li>
-                      <li>Nome Playlist</li>
+            <div class="sidebar ">
+                <img src="img/logo.svg" alt="" class="logo">
+                <ul>
+                    <li>
+                        <a href="#"><img src="img/home.svg" alt=""><strong
+                                class="color_white hidden_xs">Home</strong></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/search.svg" alt=""><span class=" hidden_xs">Cerca</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/libreria.svg" alt=""><span class="hidden_xs">La tua
+                                libreria</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><strong class="color_white hidden_xs ">PLAYLIST</strong></a>
+                    </li>
+                    <li>
+                        <a class="hidden_xs" href="#"><i class="fa fa-plus-square" aria-hidden="true"></i>Crea
+                            playlist</a>
+                    </li>
+                </ul>
+                <ul class="central_playlist hidden_xs">
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
 
-                  </ul>
-                  <ul class="nome_utente">
-                      <li>
-                          <a href="#"><img src="img/download.svg" alt=""><span class=" hidden_xs">Installa app</span></a>
-                      </li>
-                      <hr class="hidden_xs">
-                      <li>
-                          <div><a href="#"><img src="img/profile.svg" alt=""><strong class="color_white hidden_xs">John Doe</strong></a></div>
-                      </li>
-                  </ul>
-              </div>
+                </ul>
+                <ul class="nome_utente">
+                    <li>
+                        <a href="#"><img src="img/download.svg" alt=""><span class=" hidden_xs">Installa app</span></a>
+                    </li>
+                    <hr class="hidden_xs">
+                    <li>
+                        <div><a href="#"><img src="img/profile.svg" alt=""><strong class="color_white hidden_xs">John
+                                    Doe</strong></a></div>
+                    </li>
+                </ul>
+            </div>
         </section>
-                     <!-- Contenuto delle playlist a destra -->
+        <!-- Contenuto delle playlist a destra -->
         <section class="playlist_right">
-              <div class="hero">
-                  <div>
-                      <a class="upgrade" href="#"><strong>EFFETTUA L'UPGRADE</strong></a>
-                  </div>
-              </div>
-              <div class="menu_top">
-                  <ul>
-                      <li><a class="evidenzia" href="#">IN EVIDENZA</a></li>
-                      <li><a href="#">PODCAST</a></li>
-                      <li><a href="#">CLASSIFICHE</a></li>
-                      <li><a href="#">GENERI E MOOD</a></li>
-                      <li><a href="#">NUOVE USCITE</a></li>
-                      <li><a href="#">SCOPRI</a></li>
-                  </ul>
-              </div>
+            <div class="hero">
+                <div>
+                    <a class="upgrade" href="#"><strong>EFFETTUA L'UPGRADE</strong></a>
+                </div>
+            </div>
+            <div class="menu_top">
+                <ul>
+                    <li><a class="evidenzia" href="#">IN EVIDENZA</a></li>
+                    <li><a href="#">PODCAST</a></li>
+                    <li><a href="#">CLASSIFICHE</a></li>
+                    <li><a href="#">GENERI E MOOD</a></li>
+                    <li><a href="#">NUOVE USCITE</a></li>
+                    <li><a href="#">SCOPRI</a></li>
+                </ul>
+            </div>
 
-                                         <!-- Inizio box immagini -->
-                                         
-              <h1 class="color_white recenti"><strong>Recently played</strong></h1>
-              <div class="box_img">
-                  <div class="podcast">
-                      <div class="hover_img">
+            <!-- Inizio box immagini -->
+
+            <h1 class="color_white recenti"><strong>Recently played</strong></h1>
+            <div class="box_img">
+                <div class="podcast">
+                    <div class="hover_img">
                         <div class="overlay-img">
-                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                         </div>
                         <img src="img/metal_lifting.jpg" alt="">
-                      </div>
-                      
-                      <h5 class="color_white">Heavy Metal</h5>
-                      <p class="color_gray">Subtitle</p>
-                  </div>
+                    </div>
 
-                  <div class="podcast">
+                    <h5 class="color_white">Heavy Metal</h5>
+                    <p class="color_gray">Subtitle</p>
+                </div>
+
+                <div class="podcast">
                     <div class="hover_img">
                         <div class="overlay-img">
                             <i class="fa fa-play-circle-o" aria-hidden="true"></i>
@@ -229,7 +239,7 @@
                         </div>
                         <img src="img/youg.jpeg" alt="">
                     </div>
-                    <h5 class="color_white">Release Radar</h5>
+                    <h5 class="color_white">Lana Del Rey</h5>
                 </div>
 
                 <div class="podcast">
@@ -237,12 +247,13 @@
                         <div class="overlay-img">
                             <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                         </div>
-                     <img src="img/einaudi.jpeg" alt="">
+                        <img src="img/einaudi.jpeg" alt="">
                     </div>
-                    <h5 class="color_white">Daily Mix 1</h5>
+                    <h5 class="color_white">Einaudi</h5>
                 </div>
             </div>
         </section>
     </main>
 </body>
+
 </html>

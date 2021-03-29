@@ -16,9 +16,19 @@ body {
 
 header {
     z-index: 2;
-}        
+}
 
-header nav {
+
+.left_ul, .right_ul {
+    flex-basis: 150px;
+}
+
+.play {
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+nav {
     height: 100px;
     background-color: #282828;
     color: white;
@@ -58,6 +68,10 @@ header nav ul li {
     flex-direction: column;
 }
 
+.fa-play-circle-o:hover {
+    font-size: 25px;
+}
+
 .play i {
     padding-top: 5px;
     padding-bottom: 0;
@@ -69,18 +83,19 @@ header nav ul li {
     font-size: 20px;
 }
 
-main {
-    display: flex;
-}
-
 .durata {
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+    display: flex;
+}
+
+
     /* Progress Bar */
 .progress_bar_play ,.progress_bar_volume {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
 } 
@@ -97,20 +112,18 @@ main {
     background-color: greenyellow;
 }
 
+.two_bar {
+    height: 3px;
+    background-color: #5a5a5a;
+    margin-right: 5px;
+    border-radius: 20%;
+}
 
 .hover_green {
     height: 10px;
     width: 10px;
     border-radius: 50%;
     background-color: white;
-}
-
-.two_bar {
-    /* width: 120px; */
-    height: 3px;
-    background-color: #5a5a5a;
-    margin-right: 5px;
-    border-radius: 20%;
 }
 
     /* Prima section */
@@ -161,7 +174,7 @@ main {
 }
 
 .central_playlist {
-    flex-basis: 80%;
+    flex-grow: 1;
     overflow: auto;
 }
 
@@ -343,24 +356,12 @@ main {
     padding: 0 20px;
 }
 
-nav ul li {
-    font-size: 14px;
-}
-
-.one_bar {
-    width: 10px;
-}
-
-.two_bar {
-    width: 30px;
-}
-
 header nav ul li {
     padding: 5px 3px;
 }
 
 .hidden_xs {
-    display: none;
+    visibility: hidden;
 }
 
 .play li i {
@@ -371,6 +372,19 @@ header nav ul li {
 .durata {
     font-size: 10px;
 }
+
+.progress_bar_play .two_bar {
+    width: 40px;
+}
+
+.progress_bar_volume .two_bar {
+    width: 20px;
+}
+
+.progress_bar_volume .one_bar {
+    width: 5px;
+}
+
 }
 
                 /* SM */
@@ -379,14 +393,6 @@ header nav ul li {
 
 .podcast {
     width: calc(100% / 2);
-}
-
-.one_bar {
-    width: 10px;
-}
-
-.two_bar {
-    width: 40px;
 }
 
 nav ul li {
@@ -398,16 +404,28 @@ header nav ul li {
     padding: 5px 3px;
 }
 
+.progress_bar_play .two_bar {
+    width: 100px;
+}
+
+.progress_bar_volume .two_bar {
+    width: 45px;
+}
+
+.progress_bar_volume .one_bar {
+    width: 10px;
+}
+
+.preferiti {
+    display: flex;
+}
+
 }
                 /* MD */
 @media screen and (min-width: 780px) {
 
 .podcast {
     width: calc(100% / 4);
-}
-
-.progress_bar_play .two_bar {
-    width: 220px;
 }
 
 nav ul li {
@@ -418,9 +436,19 @@ header nav ul li {
     padding: 5px 5px;
 }
 
-.one_bar {
-    width: 40px;
+.progress_bar_play .two_bar {
+    width: 180px;
 }
+
+.progress_bar_volume .one_bar {
+    width: 20px;
+}
+
+.progress_bar_volume .two_bar {
+    width: 70px;
+}
+
+
 }
                 /* LG */
 @media screen and (min-width: 1200px) {
@@ -428,7 +456,6 @@ header nav ul li {
 .podcast {
     width: calc(100% / 6);
 }
-
 }
 
 
