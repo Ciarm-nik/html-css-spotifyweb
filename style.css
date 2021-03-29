@@ -36,10 +36,6 @@ header nav ul li {
     padding: 10px 10px;
 }
 
-.prima_ul {
-    flex-shrink: 5;
-}
-
 .img_sinister {
     width: 50px;
 }
@@ -54,11 +50,7 @@ header nav ul li {
     text-decoration: underline;
 }
 
-.fa-file-o:hover {
-    color: white;
-}
-
-.fa-heart-o:hover {
+.fa-file-o:hover ,.fa-heart-o:hover {
     color: white;
 }
 
@@ -74,7 +66,7 @@ header nav ul li {
 }
 
 .fa-play-circle-o {
-    font-size: 23px;
+    font-size: 20px;
 }
 
 main {
@@ -82,27 +74,39 @@ main {
 }
 
 .durata {
-    font-size: 14px;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
     /* Progress Bar */
-.progress_bar {
-    width: 100%;
+.progress_bar_play ,.progress_bar_volume {
+    max-width: 100%;
     display: flex;
     align-items: center;
 } 
 
 .one_bar {
     margin-left: 5px;
-    width: 20px;
+    width: 30px;
     height: 3px;
     background-color: #c1c1c1;
     border-radius: 20%;
 }
 
+.one_bar:hover {
+    background-color: greenyellow;
+}
+
+
+.hover_green {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
 .two_bar {
-    width: 120px;
+    /* width: 120px; */
     height: 3px;
     background-color: #5a5a5a;
     margin-right: 5px;
@@ -281,10 +285,6 @@ main {
       cursor: pointer;
 }
 
-
-
-
-
     /* Utility classes */
 .color_white {
     color: white;
@@ -344,15 +344,19 @@ main {
 }
 
 nav ul li {
-    font-size: 10px;
+    font-size: 14px;
+}
+
+.one_bar {
+    width: 10px;
 }
 
 .two_bar {
-    width: 100%;
+    width: 30px;
 }
 
 header nav ul li {
-    padding: 5px 5px;
+    padding: 5px 3px;
 }
 
 .hidden_xs {
@@ -377,17 +381,21 @@ header nav ul li {
     width: calc(100% / 2);
 }
 
+.one_bar {
+    width: 10px;
+}
+
 .two_bar {
     width: 40px;
 }
 
 nav ul li {
-    font-size: 10px;
+    font-size: 14px;
     padding: 5px;
 }
 
 header nav ul li {
-    padding: 5px 5px;
+    padding: 5px 3px;
 }
 
 }
@@ -398,12 +406,20 @@ header nav ul li {
     width: calc(100% / 4);
 }
 
-.two_bar {
-    width: 120px;
+.progress_bar_play .two_bar {
+    width: 220px;
 }
 
 nav ul li {
     font-size: 15px;
+}
+
+header nav ul li {
+    padding: 5px 5px;
+}
+
+.one_bar {
+    width: 40px;
 }
 }
                 /* LG */
@@ -413,9 +429,6 @@ nav ul li {
     width: calc(100% / 6);
 }
 
-.two_bar {
-    width: 150px;
-}
 }
 
 
