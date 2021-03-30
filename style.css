@@ -100,6 +100,7 @@ main {
     width: 100%;
     display: flex;
     align-items: center;
+    position: relative;
 } 
 
 .one_bar {
@@ -108,7 +109,6 @@ main {
     height: 3px;
     background-color: #c1c1c1;
     border-radius: 20%;
-    position: relative;
 }
 
 
@@ -136,15 +136,26 @@ main {
 }
 
 
-.hover_green {
+.progress_bar_play .hover_green {
     display: none;
     height: 10px;
     width: 10px;
     border-radius: 50%;
     background-color: white;
-    position: relative;
-    top: 0;
-    right: 0;
+    position: absolute;
+    top: 3px;
+    left: 30px;
+}
+
+.progress_bar_volume .hover_green {
+    display: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -3px;
+    left: 15px;
 }
 
     /* Prima section */
@@ -319,6 +330,7 @@ main {
       cursor: pointer;
 }
 
+
     /* Utility classes */
 .color_white {
     color: white;
@@ -353,10 +365,6 @@ main {
 .margin_right {
     margin-right: 10px;
 }
-
-
-
-
 
              /* Media query */
 
@@ -407,9 +415,8 @@ header nav ul li {
 }
 
 .progress_bar_volume .one_bar {
-    width: 5px;
+    width: 10px;
 }
-
 }
 
                 /* SM */
@@ -440,8 +447,6 @@ header nav ul li {
 .progress_bar_volume .one_bar {
     width: 10px;
 }
-
-
 }
                 /* MD */
 @media screen and (min-width: 780px) {
@@ -462,10 +467,6 @@ header nav ul li {
     width: 180px;
 }
 
-.progress_bar_volume .one_bar {
-    width: 20px;
-}
-
 .progress_bar_volume .two_bar {
     width: 70px;
 }
@@ -473,8 +474,6 @@ header nav ul li {
 .preferiti {
     display: flex;
 }
-
-
 }
                 /* LG */
 @media screen and (min-width: 1200px) {
@@ -483,6 +482,3 @@ header nav ul li {
     width: calc(100% / 6);
 }
 }
-
-
-
